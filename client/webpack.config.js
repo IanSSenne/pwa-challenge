@@ -3,6 +3,7 @@ const WebpackPwaManifest = require("webpack-pwa-manifest");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const { InjectManifest, GenerateSW } = require("workbox-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 // TODO: Add CSS loaders and babel to webpack.
@@ -34,10 +35,19 @@ module.exports = () => {
 				background_color: "#01579b",
 				theme_color: "#ffffff",
 				start_url: "/",
+				icons: [
+					{
+						src: "./src/images/logo.png",
+						sizes: [96, 128, 192, 256, 384, 512],
+						destination: "assets/icons",
+					},
+				],
+				fingerprints: false,
 			}),
 			new InjectManifest({
 				swSrc: "./src-sw.js",
 			}),
+			new CleanWebpackPlugin(),
 		],
 
 		module: {
