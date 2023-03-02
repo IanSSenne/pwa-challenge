@@ -1,0 +1,10 @@
+{
+  "name": "Text Editor",
+  "short_name": "Text Editor",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "A text editor for your browser",
+  "background_color": "#01579b",
+  "theme_color": "#ffffff"
+}
