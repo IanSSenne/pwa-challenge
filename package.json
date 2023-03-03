@@ -3,6 +3,9 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
+	"engines": {
+		"node": "16.x"
+	},
 	"scripts": {
 		"start:dev": "cd client && npm run dev",
 		"start": "npm run server",

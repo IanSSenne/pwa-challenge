@@ -5,9 +5,6 @@
 		"build": "webpack --mode production",
 		"start": "webpack serve --mode development"
 	},
-	"engines": {
-		"node": "16.x"
-	},
 	"author": "2U",
 	"license": "UNLICENSED",
 	"devDependencies": {
