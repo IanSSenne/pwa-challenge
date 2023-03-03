@@ -1,109 +1,77 @@
 # Unit 19 PWA Challenge: Text Editor
 
-## Your Task
+![License - Unlicense](https://img.shields.io/static/v1?label=License&message=Unlicense&color=blue&style=plastic)
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+A PWA text editor that stores your content in indexedDB.
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+View it at [https://intense-refuge-11790.herokuapp.com/](https://intense-refuge-11790.herokuapp.com/)
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
+![image](https://user-images.githubusercontent.com/48780301/222648376-c23441d8-8c00-415a-91dc-84a844b7f44e.png)
 
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
 
-## User Story
+## Table of Contents
 
-```md
-AS A developer
-I WANT to create notes or code snippets with or without an internet connection
-SO THAT I can reliably retrieve them for later use
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
+
+## Installation
+
+`yarn` or `npm i`
+
+## Usage
+
+1. Install dependencies with `npm i`
+
+2. run `npm run install`
+
+3. run `npm run start:dev`
+
+## Contributing
+
+To contribute please make a fork and submit a pr and ill get to it when i look at the repo next.
+
+## Tests
+
+No Tests
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at [IanSSenne@gmail.com](mailto:IanSSenne@gmail.com).
+
+## License
+
+**The Unlicense**
+
 ```
 
-## Acceptance Criteria
+This is free and unencumbered software released into the public domain.
 
-```md
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <https://unlicense.org>
+
 
 ```
-
-## Mock-Up
-
-The following animation demonstrates the application functionality:
-
-![Demonstration of the finished Unit 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
-
-The following image shows the application's `manifest.json` file:
-
-![Demonstration of the finished Unit 19 Challenge with a manifest file in the browser.](./Assets/01-manifest.png)
-
-The following image shows the application's registered service worker:
-
-![Demonstration of the finished Unit 19 Challenge with a registered service worker in the browser.](./Assets/02-service-worker.png)
-
-The following image shows the application's IndexedDB storage:
-
-![Demonstration of the finished Unit 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
-
-## Grading Requirements
-
-This challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-- Satisfies all of the above acceptance criteria plus the following:
-
-  - Uses IndexedDB to create an object store and includes both GET and PUT methods
-
-  - The application works without an internet connection
-
-  - Automatically saves content inside the text editor when the DOM window is unfocused
-
-  - Bundled with webpack
-
-  - Create a service worker with workbox that Caches static assets
-
-  - The application should use babel in order to use async / await
-
-  - Application must have a generated `manifest.json` using the `WebpackPwaManifest` plug-in
-
-  - Can be installed as a Progressive Web Application
-
-### Deployment: 32%
-
-- Application deployed to Heroku at live URL with build scripts
-
-- Application loads with no errors
-
-- Application GitHub URL submitted
-
-- GitHub repo contains application code
-
-### Application Quality: 15%
-
-- Application user experience is intuitive and easy to navigate
-
-- Application user interface style is clean and polished
-
-- Application resembles the mock-up functionality provided in the challenge instructions
-
-### Repository Quality: 13%
-
-- Repository has a unique name
-
-- Repository follows best practices for file structure and naming conventions
-
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-- Repository contains multiple descriptive commit messages
-
-- Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-- The URL of the deployed application
-
-- The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
