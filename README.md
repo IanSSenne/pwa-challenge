@@ -21,12 +21,7 @@ SO THAT I can reliably retrieve them for later use
 ## Acceptance Criteria
 
 ```md
-WHEN I click on the Install button
-THEN I download my web application as an icon on my desktop
-WHEN I register a service worker
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-WHEN I deploy to Heroku
-THEN I should have proper build scripts for a webpack application
+
 ```
 
 ## Mock-Up
